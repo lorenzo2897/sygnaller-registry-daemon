@@ -1,0 +1,13 @@
+Installing
+==========
+
+- Put contents of directory in /home/ubuntu/registry/
+
+- Register the service by copying registryd.service into /etc/systemd/system/
+
+- Run:
+sudo systemctl daemon-reload
+sudo systemctl enable registryd
+sudo systemctl start registryd
+
+- Check status with systemctl status registryd
